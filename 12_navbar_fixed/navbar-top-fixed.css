@@ -1,3 +1,6 @@
+body {
+	min-height: 75rem;
+}
 #navbar {
 	padding-inline: 10rem;
 }
