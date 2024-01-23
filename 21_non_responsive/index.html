@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Pedro García Santana">
+		<title>Non responsive</title>
+		<link rel="stylesheet" href="non-responsive.css">
+		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-light justify-content-evenly bg-light border" id="navbar">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10"
+				aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a href="#" class="navbar-brand ms-5" id="navbarBrand">Project name</a>
+			<div class="collapse navbar-collapse d-flex justify-content-between" id="navbarsExample10">
+				<ul class="navbar-nav">
+					<li class="nav-item px-2">
+						<a class="nav-link active" href="#">Home</span></a>
+					</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown10">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav me-5">
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Link</a>
+						</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Link</a>
+						</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="#">Link</a>
+						</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container px-5 mt-5">
+			<h1 class="display-4 fw-semibold">Non-responsive Bootstrap</h1>
+			<h2 class="fw-lighter">
+				Disable the responsiveness of Bootstrap by fixing the width of the container and using the first grid
+				system tier.
+			</h2>
+			<h3 class="mt-5 fs-2 fw-semibold">What changes</h3>
+			<p>
+				Notice the lack of the <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>,
+				which disables the zooming aspect of sites in mobile devices. In addition, we reset our container's width and
+				are basically good to go.
+			</p>
+			<h3 class="fs-2 fw-semibold">Regarding navbars</h3>
+			<p>
+				As a heads up, the navbar component is rather tricky here in that the styles for displaying it are rather specific
+				and detailed. Overrides to ensure desktop styles display are not as performant or sleek as one would like. Just be
+				aware there may be potential gotchas as you build on top of this example when using the navbar.
+			</p>
+			<h3 class="fs-2 fw-semibold">Non-responsive grid system</h3>
+			<div class="row bg-body-secondary border border-secondary-subtle border-5">
+				<div class="col-4 border-end border-secondary-subtle border-5 py-3">One third</div>
+				<div class="col-4 border-end border-secondary-subtle border-5 py-3">One third</div>
+				<div class="col-4 py-3">One third</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	</body>
+</html>
