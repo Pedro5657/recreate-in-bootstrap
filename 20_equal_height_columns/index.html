@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Pedro García Santana">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Equal height columns</title>
+	<link rel="stylesheet" href="equal_height_columns.css">
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container px-5">
+		<h1 class="mt-5">Bootstrap equal height columns experiment</h1>
+		<h3 class="fs-4 fw-lighter">A simple experiment that adds flexbox-based equal-height columns to Bootstrap's grid system.</h3>
+		<h2 class="mt-5">Normal row (with unequal-height columns)</h2>
+		<p>For comparison, here's a normal row, <b>without</b> <code>.row-eq-height</code>.</p>
+		<div class="row">
+			<div class="col col-xs-4 bg-body-secondary border border-dark">.row > .col-xs-4</div>
+			<div class="col col-xs-4 bg-body-secondary border border-dark">.row > . col-xs-4 this is <br>a much <br> taller <br> column <br> than the others</div>
+			<div class="col col-xs-4 bg-body-secondary border border-dark">.row > .col-xs-4</div>
+		</div>
+		<hr>
+		<h2>Row with equal-height columns</h2>
+		<p>
+			This row uses the custom <code>.row-eq-height</code> class defined in <a href="">this example's CSS</a> to make all of
+			its columns automatically be of equal height.
+		</p>
+		<p>All of the columns will sstretch vertically to occupy the same height as the tallest column.</p>
+		<div class="row row-eq-height">
+			<div class="col col-xs-4 bg-body-secondary border border-dark">.row.row-eq-height > .col-xs-4</div>
+			<div class="col col-xs-4 bg-body-secondary border border-dark">.row.row-eq-height > . col-xs-4 this is <br>a much <br> taller <br> column <br> than the others</div>
+			<div class="col col-xs-4 bg-body-secondary border border-dark">.row.row-eq-height > .col-xs-4</div>
+		</div>
+		<div class="alert alert-danger my-5">
+			<h4 class="fw-bold alert-heading">Warning: Browser compatibility</h4>
+			<p class="text-black">
+				The <code>.row-eq-height</code> class uses <a href="">CSS3's flexbox layout mode</a>, which is not supported in Internet
+				Explorer 9 and below.
+			</p>
+			<p class="text-black">In any unsupported browser, the <code>.row-eq-height</code> class will have no effect.</p>
+			<p class="text-black">For more info on browser support for flexbox, please consult <a href="">"Can I use..."</a>.</p>
+		</div>
+		<div class="alert alert-warning my-5">
+			<h4 class="fw-bold alert-heading">Warning: Changes column wrapping behavior</h4>
+			<p class="text-black">
+				If you have put than 12 columns in one <code>.row-eq-height</code>, the columns will be forced to shrink into a single row, instead of
+				wrapping onto a new line as they normally would.
+			</p>
+		</div>
+		<h2>(...)</h2>
+		<div class="alert alert-danger my-5">
+			<h4 class="fw-bold alert-heading">¡Ojo!</h4>
+			<p>La clase <code>.row-eq-height</code> no parece estar en la versión actual de Bootstrap, por eso no se produce el efecto.</p>
+			<button></button>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</body>
+
+</html>
